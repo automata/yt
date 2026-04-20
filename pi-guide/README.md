@@ -1,0 +1,34 @@
+# Pi Agent Guide
+
+- Intro: Deep dive
+    - What Pi is and what it isn't
+        - Minimalist, only 4 tools, minimal system prompt
+        - No MCP
+        - No sub-agents
+        - No permission blocks
+        - No plan mode or todo mode
+        - No background bash
+    - Installation (point to other video)
+    - Providers authentication: API Key (OpenRouter) or OAuth
+    - Sessions and `/tree /share /export`
+      - pi -c
+    - Context engineering in Pi
+        - `AGENTS.md`
+        - `SYSTEM.md`
+        - Compaction
+        - Skills
+        - Prompt templates
+        - Dynamic context → Extensions
+    - Queuing `Enter` and `Alt+Enter`
+    - Extensions: how to use, cool ones (marketplace?), creating yours
+        - Pi is based on hot reloading
+    - Integrating Pi
+        - Interactive
+        - Print/JSON
+        - RPC
+        - SDK
+    - Themes
+    - Pi Packages: sharing your packages
+    - Forks Oh My Pi and others
+- Outro
+
