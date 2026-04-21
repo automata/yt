@@ -1,0 +1,79 @@
+{
+  "$schema": "https://raw.githubusercontent.com/badlogic/pi-mono/main/packages/coding-agent/src/modes/interactive/theme/theme-schema.json",
+  "name": "matrix",
+  "vars": {
+    "green": "#00ff41",
+    "greenBright": "#7dff9b",
+    "greenDim": "#00cc33",
+    "greenMuted": "#009922",
+    "greenDark": "#006b1a",
+    "greenDarker": "#003b0f",
+    "greenBg": "#001a08",
+    "greenBgAlt": "#00240b",
+    "greenBgSoft": "#002e0e"
+  },
+  "colors": {
+    "accent": "green",
+    "border": "greenDim",
+    "borderAccent": "greenBright",
+    "borderMuted": "greenDark",
+    "success": "green",
+    "error": "green",
+    "warning": "greenBright",
+    "muted": "greenMuted",
+    "dim": "greenDark",
+    "text": "green",
+    "thinkingText": "greenMuted",
+
+    "selectedBg": "greenBgSoft",
+    "userMessageBg": "greenBgAlt",
+    "userMessageText": "green",
+    "customMessageBg": "greenBgAlt",
+    "customMessageText": "green",
+    "customMessageLabel": "greenBright",
+    "toolPendingBg": "greenBgAlt",
+    "toolSuccessBg": "greenBg",
+    "toolErrorBg": "greenBgSoft",
+    "toolTitle": "greenBright",
+    "toolOutput": "green",
+
+    "mdHeading": "greenBright",
+    "mdLink": "green",
+    "mdLinkUrl": "greenMuted",
+    "mdCode": "greenBright",
+    "mdCodeBlock": "green",
+    "mdCodeBlockBorder": "greenDim",
+    "mdQuote": "greenMuted",
+    "mdQuoteBorder": "greenDark",
+    "mdHr": "greenDark",
+    "mdListBullet": "greenBright",
+
+    "toolDiffAdded": "greenBright",
+    "toolDiffRemoved": "greenDim",
+    "toolDiffContext": "greenMuted",
+
+    "syntaxComment": "greenDark",
+    "syntaxKeyword": "greenBright",
+    "syntaxFunction": "green",
+    "syntaxVariable": "green",
+    "syntaxString": "greenBright",
+    "syntaxNumber": "greenDim",
+    "syntaxType": "greenBright",
+    "syntaxOperator": "green",
+    "syntaxPunctuation": "greenMuted",
+
+    "thinkingOff": "greenDarker",
+    "thinkingMinimal": "greenDark",
+    "thinkingLow": "greenMuted",
+    "thinkingMedium": "greenDim",
+    "thinkingHigh": "green",
+    "thinkingXhigh": "greenBright",
+
+    "bashMode": "greenBright"
+  },
+  "export": {
+    "pageBg": "#000d04",
+    "cardBg": "#001406",
+    "infoBg": "#00210a"
+  }
+}

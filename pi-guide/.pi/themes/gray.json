@@ -1,0 +1,79 @@
+{
+  "$schema": "https://raw.githubusercontent.com/badlogic/pi-mono/main/packages/coding-agent/src/modes/interactive/theme/theme-schema.json",
+  "name": "gray",
+  "vars": {
+    "grayBright": "#f0f0f0",
+    "gray": "#c8c8c8",
+    "grayDim": "#9a9a9a",
+    "grayMuted": "#727272",
+    "grayDark": "#4e4e4e",
+    "grayDarker": "#2e2e2e",
+    "grayBg": "#161616",
+    "grayBgAlt": "#1d1d1d",
+    "grayBgSoft": "#252525"
+  },
+  "colors": {
+    "accent": "gray",
+    "border": "grayDim",
+    "borderAccent": "grayBright",
+    "borderMuted": "grayDark",
+    "success": "grayBright",
+    "error": "gray",
+    "warning": "grayBright",
+    "muted": "grayMuted",
+    "dim": "grayDark",
+    "text": "gray",
+    "thinkingText": "grayMuted",
+
+    "selectedBg": "grayBgSoft",
+    "userMessageBg": "grayBgAlt",
+    "userMessageText": "gray",
+    "customMessageBg": "grayBgAlt",
+    "customMessageText": "gray",
+    "customMessageLabel": "grayBright",
+    "toolPendingBg": "grayBgAlt",
+    "toolSuccessBg": "grayBg",
+    "toolErrorBg": "grayBgSoft",
+    "toolTitle": "grayBright",
+    "toolOutput": "gray",
+
+    "mdHeading": "grayBright",
+    "mdLink": "gray",
+    "mdLinkUrl": "grayMuted",
+    "mdCode": "grayBright",
+    "mdCodeBlock": "gray",
+    "mdCodeBlockBorder": "grayDim",
+    "mdQuote": "grayMuted",
+    "mdQuoteBorder": "grayDark",
+    "mdHr": "grayDark",
+    "mdListBullet": "grayBright",
+
+    "toolDiffAdded": "grayBright",
+    "toolDiffRemoved": "grayDim",
+    "toolDiffContext": "grayMuted",
+
+    "syntaxComment": "grayDark",
+    "syntaxKeyword": "grayBright",
+    "syntaxFunction": "gray",
+    "syntaxVariable": "gray",
+    "syntaxString": "grayBright",
+    "syntaxNumber": "grayDim",
+    "syntaxType": "grayBright",
+    "syntaxOperator": "gray",
+    "syntaxPunctuation": "grayMuted",
+
+    "thinkingOff": "grayDarker",
+    "thinkingMinimal": "grayDark",
+    "thinkingLow": "grayMuted",
+    "thinkingMedium": "grayDim",
+    "thinkingHigh": "gray",
+    "thinkingXhigh": "grayBright",
+
+    "bashMode": "grayBright"
+  },
+  "export": {
+    "pageBg": "#101010",
+    "cardBg": "#181818",
+    "infoBg": "#222222"
+  }
+}
