@@ -1,41 +1,27 @@
 # Pi Agent Guide
 
-    - What Pi is and what it isn't
-    - Installation
-    - Providers authentication
-    - Useful keystrokes and commands
-    - Important directories
-    - Sessions management
-    - Context engineering
-    - Queuing
-    - Extensions
-    - Installing Pi packages
-    - Themes
-    - Integrating Pi in your app
-    - Forks of Pi
-
 ## What Pi is and what it isn't
 
-    - Minimalist
-      -> Stripped away extra features, minimal extensible core
-      -> Only 4 tools (read, write, edit, bash)
-      -> ~1k tokens system prompt
-      -> Self-modifiable with hot reload, hackable
-    - No MCP
-      -> MCPs burn your context window
-      -> Too verbose, ~10k tokens per server
-      -> Use pi-mcp-adapter or mcporter
-      -> Build CLI tools with README (Skills)
-    - No sub-agents
-      -> Tell pi to spawn other pi instances if needed
-      -> Plan ahead!
-      -> Build your own as extension or install a package
-    - No permission blocks
-       -> YOLO by default
-    - No plan mode or todo mode
-       -> Create your own extension or use PLAN.md / TODO.md
-    - No background bash
-       -> Tell pi to use tmux + dev server, debugger or whatever else you need
+- Minimalist
+  -> Stripped away extra features, minimal extensible core
+  -> Only 4 tools (read, write, edit, bash)
+  -> ~1k tokens system prompt
+  -> Self-modifiable with hot reload, hackable
+- No MCP
+  -> MCPs burn your context window
+  -> Too verbose, ~10k tokens per server
+  -> Use pi-mcp-adapter or mcporter
+  -> Build CLI tools with README (Skills)
+- No sub-agents
+  -> Tell pi to spawn other pi instances if needed
+  -> Plan ahead!
+  -> Build your own as extension or install a package
+- No permission blocks
+    -> YOLO by default
+- No plan mode or todo mode
+    -> Create your own extension or use PLAN.md / TODO.md
+- No background bash
+    -> Tell pi to use tmux + dev server, debugger or whatever else you need
 
 ## Installation
 
@@ -50,59 +36,61 @@
 - Select between models with `/model`
 - For local models, edit `~/.pi/agent/models.json`:
 
-    {
-      "providers": {
-        "ollama": {
-          "baseUrl": "http://localhost:11434/v1",
-          "apiKey": "ollama",
-          "api": "openai-chat-completions",
-          "models": [
-            { "id": "qwen2.5-coder:32b", "contextWindow": 32768 }
-          ]
-        }
-      }
+```json
+{
+  "providers": {
+    "ollama": {
+      "baseUrl": "http://localhost:11434/v1",
+      "apiKey": "ollama",
+      "api": "openai-chat-completions",
+      "models": [
+        { "id": "qwen2.5-coder:32b", "contextWindow": 32768 }
+      ]
     }
+  }
+}
+```
 
 ## Useful keystrokes and commands
 
-    - Useful keystrokes
-      - Ctrl-c Ctrl-c       -> Exit
-      - Ctrl-c              -> Interrupt
-      - Shift-Enter         -> Multiline prompts
-      - Esc Esc             -> /tree
-      - Enter               -> Queue next prompt
-      - Alt-Enter           -> Steer current prompt
-      - Ctrl-l              -> Select a model
+- Useful keystrokes
+  - Ctrl-c Ctrl-c       -> Exit
+  - Ctrl-c              -> Interrupt
+  - Shift-Enter         -> Multiline prompts
+  - Esc Esc             -> /tree
+  - Enter               -> Queue next prompt
+  - Alt-Enter           -> Steer current prompt
+  - Ctrl-l              -> Select a model
 
-    - Useful commands
-      - /login              -> Login into a provider
-      - /model              -> Select a model
-      - /compact            -> Compact context
-      - /tree               -> Navigate session
-      - /fork               -> Fork a session branch
-      - /new                -> New session
+- Useful commands
+  - /login              -> Login into a provider
+  - /model              -> Select a model
+  - /compact            -> Compact context
+  - /tree               -> Navigate session
+  - /fork               -> Fork a session branch
+  - /new                -> New session
 
-    - Arguments
-      -> pi -h
+- Arguments
+  -> pi -h
 
 ## Directories 
 
-    Global:
+Global:
 
-        ~/.pi/agent/
-        ├── extensions/     -> Global extensions
-        ├── skills/         -> Global skills
-        ├── prompts/        -> Prompt templates
-        ├── themes/         -> Custom themes
-        ├── sessions/       -> Session history
-        ├── models.json     -> Custom provider config
-        ├── settings.json   -> Settings
-        └── SYSTEM.md       -> Custom system prompt
+    ~/.pi/agent/
+    ├── extensions/     -> Global extensions
+    ├── skills/         -> Global skills
+    ├── prompts/        -> Prompt templates
+    ├── themes/         -> Custom themes
+    ├── sessions/       -> Session history
+    ├── models.json     -> Custom provider config
+    ├── settings.json   -> Settings
+    └── SYSTEM.md       -> Custom system prompt
 
-    Project-wise:
+Project-wise:
 
-        AGENTS.md
-        .pi/AGENTS.md
+    AGENTS.md
+    .pi/AGENTS.md
 
 ## Sessions
 
@@ -150,10 +138,10 @@
 - Tip: keep all that under version control, skills and prompt templates can be
   on its own repos and shared with your peers
 
-## Extensions: how to use, cool ones (marketplace?), creating yours
+## Extensions
 
 - Extensions TypeScript modules stored in `~/.pi/agent/extensions`
-- Pi can build extensions for you and hot reload
+- Pi can build extensions for you and hot reload thanks to jiti
 - You can create new
   - Tools
   - Commands
@@ -163,6 +151,8 @@
   - Custom providers
   - Fully custom TUI
 - Pi Packages: Bundle extensions and share via npm or git
+- Great examples:
+  - `https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent/examples`
 
 ## Installing Pi packages
 
@@ -214,11 +204,6 @@ Use `pi install -l` to install locally in `.pi/git` or `.pi/npm`.
 
 ## Forks and other flavors
 
-  - Oh My Pi: https://github.com/can1357/oh-my-pi
-  - Pi Rust
-  - Mo: https://github.com/automata/mo
-
-## CtA
-
-- Contribute your sessions on OSS?? 
-  https://github.com/badlogic/pi-share-hf
+- Oh My Pi: https://github.com/can1357/oh-my-pi
+- Pi Rust: https://github.com/Dicklesworthstone/pi_agent_rust
+- Modex: https://github.com/automata/modex
