@@ -1,4 +1,4 @@
-# Pi Agent Guide
+# Pi Agent Full Course
 
 ## What Pi is (and what it isn't)
 
