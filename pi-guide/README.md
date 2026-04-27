@@ -78,14 +78,14 @@
 Global:
 
     ~/.pi/agent/
-    ├── extensions/     -> Global extensions
-    ├── skills/         -> Global skills
-    ├── prompts/        -> Prompt templates
-    ├── themes/         -> Custom themes
-    ├── sessions/       -> Session history
-    ├── models.json     -> Custom provider config
-    ├── settings.json   -> Settings
-    └── SYSTEM.md       -> Custom system prompt
+    ├── extensions/   -> Global extensions
+    ├── skills/       -> Global skills
+    ├── prompts/      -> Prompt templates
+    ├── themes/       -> Custom themes
+    ├── sessions/     -> Session history
+    ├── models.json   -> Custom provider config
+    ├── settings.json -> Settings
+    └── SYSTEM.md     -> Custom system prompt
 
 Project-wise:
 
