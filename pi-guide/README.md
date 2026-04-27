@@ -1,27 +1,27 @@
 # Pi Agent Guide
 
-## What Pi is and what it isn't
+## What Pi is (and what it isn't)
 
 - Minimalist
-  -> Stripped away extra features, minimal extensible core
-  -> Only 4 tools (read, write, edit, bash)
-  -> ~1k tokens system prompt
-  -> Self-modifiable with hot reload, hackable
+-> Stripped away extra features, minimal extensible core
+-> Only 4 tools (read, write, edit, bash)
+-> ~1k tokens system prompt
+-> Self-modifiable with hot reload, hackable
 - No MCP
-  -> MCPs burn your context window
-  -> Too verbose, ~10k tokens per server
-  -> Use pi-mcp-adapter or mcporter
-  -> Build CLI tools with README (Skills)
+-> MCPs burn your context window
+-> Too verbose, ~10k tokens per server
+-> Use pi-mcp-adapter or mcporter
+-> Build CLI tools with README (Skills)
 - No sub-agents
-  -> Tell pi to spawn other pi instances if needed
-  -> Plan ahead!
-  -> Build your own as extension or install a package
+-> Tell pi to spawn other pi instances if needed
+-> Plan ahead!
+-> Build your own as extension or install a package
 - No permission blocks
-    -> YOLO by default
+-> YOLO by default
 - No plan mode or todo mode
-    -> Create your own extension or use PLAN.md / TODO.md
+-> Create your own extension or use PLAN.md / TODO.md
 - No background bash
-    -> Tell pi to use tmux + dev server, debugger or whatever else you need
+-> Tell pi to use tmux + dev server, debugger or whatever else you need
 
 ## Installation
 
@@ -202,8 +202,9 @@ Use `pi install -l` to install locally in `.pi/git` or `.pi/npm`.
 -> Lots of extensions and sdk examples in 
   - `https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent/examples`
 
-## Forks and other flavors
+## Setup script, forks and other flavors
 
+- LazyPi: https://lazypi.org/
 - Oh My Pi: https://github.com/can1357/oh-my-pi
 - Pi Rust: https://github.com/Dicklesworthstone/pi_agent_rust
 - Modex: https://github.com/automata/modex

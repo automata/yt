@@ -1,0 +1,9 @@
+{
+  "type": "module",
+  "scripts": {
+    "minimal": "node 01-minimal.ts"
+  },
+  "dependencies": {
+    "@mariozechner/pi-coding-agent": "^0.67.4"
+  }
+}
