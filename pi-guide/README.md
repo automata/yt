@@ -134,14 +134,14 @@ Project-wise:
         problems.
         Focus on: {{focus}}
 
-        - Dynamic context → Extensions
+- Dynamic context → Extensions
 - Tip: keep all that under version control, skills and prompt templates can be
   on its own repos and shared with your peers
 
 ## Extensions
 
 - Extensions TypeScript modules stored in `~/.pi/agent/extensions`
-- Pi can build extensions for you and hot reload thanks to jiti
+- Pi can build extensions for you and hot reload
 - You can create new
   - Tools
   - Commands
