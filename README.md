@@ -3,6 +3,5 @@
 This repos contains code, slides, examples and other any content to
 support videos in my YT channel.
 
-| Video | Link | Folder |
-| Pi Agent (Full Course) | https://www.youtube.com/watch?v=yAPKzHrx3eo | ![](./pi-guide/) |
+- [Pi Agent (Full Course)](https://www.youtube.com/watch?v=yAPKzHrx3eo):  ./pi-guide/
 ```
