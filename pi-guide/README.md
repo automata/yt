@@ -1,5 +1,9 @@
 # Pi Agent Full Course
 
+"Slides" and examples for the YouTube video: https://www.youtube.com/watch?v=yAPKzHrx3eo.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yAPKzHrx3eo?si=hwq-ygapSK9l9m6S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## What Pi is (and what it isn't)
 
 - Minimalist
